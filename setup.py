@@ -21,6 +21,6 @@ setup(
         "Programming Language :: Python :: 3",
     ],
     entry_points={'console_scripts': [
-        'getvimrc = getvimrc.__main__'
+        'getvimrc = getvimrc.__main__:main'
     ]},
 )

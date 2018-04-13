@@ -91,7 +91,7 @@ repo = 'nvie/vim-flake8'
 """
 
 
-if __name__ == '__main__':
+def main():
     home = os.path.expanduser('~')
     vimrc_path = os.path.join(home, '.vimrc')
     with open(vimrc_path, 'w', encoding='utf-8') as file:
@@ -104,3 +104,7 @@ if __name__ == '__main__':
     dein_path = os.path.join(vim_path, 'dein.toml')
     with open(dein_path, 'w', encoding='utf-8') as file:
         file.write(dein)
+
+
+if __name__ == '__main__':
+    main()
